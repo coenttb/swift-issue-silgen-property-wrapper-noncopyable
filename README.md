@@ -1,5 +1,9 @@
 # Swift SILGen Crash: Property Wrapper + ~Copyable Cross-Module
 
+## Swift Issue
+
+This is a cross-module reproduction of [swiftlang/swift#81624](https://github.com/swiftlang/swift/issues/81624).
+
 ## Description
 
 The compiler crashes (signal 11) during SIL generation when accessing a property that uses a property wrapper on a `~Copyable` type across module boundaries.
